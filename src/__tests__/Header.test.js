@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { expect, context } from 'chai';
-import {mount, render, shallow} from 'enzyme'
+import {mount, render, shallow} from 'enzyme';
 
 import Header from './../Components/Header';
 
 describe('Header Component', () => {
   
     it('renders without crashing', () => {
-      const div = document.createElement('div');
-      ReactDOM.render(<Header />, div);
+      const dives = document.createElement('div');
+      ReactDOM.render(<Header />, dives);
     })
 
     it('renders React logo', () => {
