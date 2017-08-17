@@ -8,8 +8,8 @@ import Header from './../Components/Header';
 describe('Header Component', () => {
   
     it('renders without crashing', () => {
-      const dives = document.createElement('div');
-      ReactDOM.render(<Header />, dives);
+      const div = document.createElement('div');
+      ReactDOM.render(<Header />, div);
     })
 
     it('renders React logo', () => {
