@@ -12,14 +12,6 @@ describe('Square Component', () => {
     ReactDOM.render(<Square />, div);
     });
 
-  it('renders children when passed in', () => {
-    const wrapper = shallow((
-      <Square>
-        <div className="unique" />
-      </Square>
-    ));
-    expect(wrapper.contains(<div className="unique" />)).to.equal(true);
-  });
 
 });
 

@@ -22,4 +22,27 @@ describe('Main Component', () => {
         expect(wrapper.find('.h4')).to.have.length(1);
     });
 
+    it('renders h5', () => {
+        const wrapper = shallow(<Main />);
+        expect(wrapper.find('.h5')).to.have.length(1);
+    });
+
+    it('renders board div', () => {
+        const wrapper = shallow(<Main />);
+        expect(wrapper.find('.board')).to.have.length(1);
+    });
+
+    it('renders 2 row divs', () => {
+        const wrapper = shallow(<Main />);
+        expect(wrapper.find('.row')).to.have.length(2);
+        expect(wrapper.find('.row--center')).to.have.length(2);
+    });
+
+    it('renders restart button', () => {
+        const wrapper = shallow(<Main />);
+        expect(wrapper.find('.button')).to.have.length(1);
+        expect(wrapper.find('.button--restart')).to.have.length(1);
+    });
+    
+
 });
