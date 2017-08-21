@@ -11,10 +11,8 @@ class Main extends React.Component{
       squares: Array(9).fill(null),
       xIsNext: true,
     };
-  }
 
-  componentDidMount(){
-
+    this.restartGame = this.restartGame.bind(this); // or use arrow function 
   }
 
   handleClick(i) {
@@ -37,6 +35,13 @@ class Main extends React.Component{
         onClick={() => this.handleClick(i)}
       />
     );
+  }
+
+  restartGame(){
+    this.setState({
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    });
   }
 
     render(){
@@ -66,7 +71,7 @@ class Main extends React.Component{
                     {this.renderSquare(8)}
                 </div>
                 <div className="row row--center">
-                    <button className="button button--restart" id="buttontest">Restart</button>
+                    <button className="button button--restart" id="buttontest" onClick={this.restartGame}>Restart</button>
                 </div>
             </main>
         )
