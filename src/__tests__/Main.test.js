@@ -23,4 +23,5 @@ describe('Main Component', () => {
         const wrapper = shallow(<Main />);
         expect(wrapper.state().xIsNext).to.equal(true);
       });
+      
 });
