@@ -5,8 +5,8 @@
     }
 
     .board{
-         max-width: 250px;
-         height: 180px;
+         max-width: 255px;
+         height: 200px;
      }
 
     .button--restart{

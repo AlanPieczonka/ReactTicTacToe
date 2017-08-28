@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { expect, context } from 'chai';
 import {mount, render, shallow} from 'enzyme';
-import Footer from './../Components/Footer';
+import { Footer } from './../Components/Footer';
 
 describe('Footer Component', () => {
 
@@ -16,14 +16,9 @@ describe('Footer Component', () => {
       expect(wrapper.find('.img--githublogo')).to.have.length(1);
     });
 
-    it('renders h6', () => {
+    it('s h6 text is Reacts ', () => {
       const wrapper = shallow(<Footer />);
-      expect(wrapper.find('.h6')).to.have.length(1);
+      expect(wrapper.find('h6').text()).to.equal('Created by Alan Pieczonka, 2017');
     }); 
-
-    it('renders proper text', () => {
-      const wrapper = render(<Footer />);
-      expect(wrapper.text()).to.contain('Created by Alan Pieczonka, 2017');
-    });
 
 });

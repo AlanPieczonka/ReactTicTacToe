@@ -96,7 +96,7 @@ p {
   display: grid;
   max-width: 470px;
   margin: 25px auto 35px auto;
-  border: 3px solid black;
+  border: 1px solid #000000;
   height: 370px;
 
   grid-template-columns: 1fr 1fr 1fr;
@@ -108,8 +108,12 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  border: 1px solid pink;
+  border: 1px solid #000000;
   background-color: #4b77be;
+}
+
+button:focus {
+  outline: none;
 }
 
 .item span {

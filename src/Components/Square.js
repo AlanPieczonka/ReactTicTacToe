@@ -1,12 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 //Functional Component
-function Square(props){
+export const Square = props => {
   return(
-      <button className={`item item${props.number + 1}`} onClick={() => props.onClick()}>
+      <button className={`item item--${props.fieldNumber}`} onClick={() => props.onClick()}>
         <span className={`span span--${props.value}`}>{props.value}</span>
       </button>
   )
 }
 
-export default Square;
+Square.propTypes = {
+  fieldNumber: PropTypes.number,
+  value: PropTypes.string,
+  onClick: PropTypes.func,
+}
