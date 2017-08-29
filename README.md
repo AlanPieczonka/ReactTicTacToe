@@ -8,4 +8,4 @@
 4. npm start 
 
 ### To run tests: 
-npm test test.js
+1. npm test test.js
