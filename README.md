@@ -9,3 +9,4 @@
 
 ### To run tests: 
 1. npm test test.js
+![screenshot](https://user-images.githubusercontent.com/20932829/29835447-526858e8-8cf2-11e7-80aa-b2678dcada8c.jpg)
