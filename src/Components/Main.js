@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Square } from './Square';
 import { calculateWinner } from './../HelperFunctions/helpers.js'; //helper function
 
+import './../css/ComponentsStyles/Main.css';
+
 class Main extends Component {
   constructor() {
     super();
@@ -54,11 +56,11 @@ class Main extends Component {
     return (
       <main>
         <div className="row row--center">
-          <h4 className="h4">
+          <h3 className="h3">
             <span className="span span--nextturn">
               {playerStatus}
             </span>
-          </h4>
+          </h3>
         </div>
         <div className="board">
           {this.renderSquare(0)}

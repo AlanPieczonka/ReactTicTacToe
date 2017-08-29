@@ -16,9 +16,9 @@ describe('Footer Component', () => {
       expect(wrapper.find('.img--githublogo')).to.have.length(1);
     });
 
-    it('s h6 text is Reacts ', () => {
+    it('s h4 text is Reacts ', () => {
       const wrapper = shallow(<Footer />);
-      expect(wrapper.find('h6').text()).to.equal('Created by Alan Pieczonka, 2017');
+      expect(wrapper.find('h4').text()).to.equal('Created by Alan Pieczonka, 2017');
     }); 
 
 });

@@ -33,5 +33,26 @@ describe('Main Component', () => {
         const wrapper = shallow(<Main />);
         wrapper.find('.button--restart').simulate('click', { preventDefault() {} });  
     });
-      
+
+    /*Render tests*/
+    it('renders h3', () => {
+        const wrapper = shallow(<Main/>);
+        expect(wrapper.find('h3'));
+    });
+
+    it('renders span--nextturn', () => {
+        const wrapper = shallow(<Main/>);
+        expect(wrapper.find('span--nextturn'));
+    });
+
+    it('renders button--restart', () => {
+        const wrapper = shallow(<Main/>);
+        expect(wrapper.find('button--restart'));
+    });
+
+    it('renders board div', () => {
+        const wrapper = shallow(<Main/>);
+        expect(wrapper.find('.board'));
+    });
+
 });

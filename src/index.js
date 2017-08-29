@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './css/normalize.css';
-import './css/style.css';
-import './css/queries.css';
+import './css/BasicStyles.css';
 
 import App from './Components/App';
 import registerServiceWorker from './registerServiceWorker';
