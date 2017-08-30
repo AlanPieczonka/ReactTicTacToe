@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './../css/ComponentsStyles/Footer.css';
+import githubLogo from './../css/img/github-logo.png';
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         <h4 className="h4">Created by Alan Pieczonka, 2017</h4>
         <a href="https://github.com" target="_blank" rel="noopener noreferrer">
           <img
-            src={require('./../css/img/github-logo.png')}
+            src={githubLogo}
             className="img--githublogo"
             alt="Github Icon"
           />

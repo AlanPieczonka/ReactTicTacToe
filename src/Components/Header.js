@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './../css/ComponentsStyles/Header.css';
-
+import reactLogo from './../css/img/react-logo.png';
 export const Header = () => {
   return (
     <header>
@@ -10,7 +10,7 @@ export const Header = () => {
         Made with <span className="span span--react">React</span>
       </h2>
       <img
-        src={require('./../css/img/react-logo.png')}
+        src={reactLogo}
         className="img--reactlogo"
         alt="React Icon"
       />
