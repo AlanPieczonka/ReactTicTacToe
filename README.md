@@ -1,7 +1,7 @@
 # Tic Tac Toe Game
 ## Made with React
 ### A big part of code has been taken from official 'intro to React' tutorial, but I included:
-* My own RWD design that takes advantege of 2017 CSS Grid 
+* My own RWD design that takes advantage of 2017 CSS Grid 
 * Function that highlights the winner's fields
 * PropTypes
 * Very simple and basic tests with Enzyme and Chai
