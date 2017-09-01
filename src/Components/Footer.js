@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer>
       <div className="row">
         <h4 className="h4">Created by Alan Pieczonka, 2017</h4>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/AlanPieczonka/ReactTicTacToe" target="_blank" rel="noopener noreferrer">
           <img
             src={githubLogo}
             className="img--githublogo"
